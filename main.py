@@ -1,5 +1,6 @@
 # Case-study #5
-# Developers: Marinkin O. (37%),
+# Developers:
+# Marinkin O. (37%),
 # Seledtsov A. (36%),
 # Evdischenko M. (68%)
 
@@ -58,5 +59,3 @@ with open('output.txt', 'w') as f_out:
     for i in range(len(a)):
         tb.add_row([a[i][0], a[i][1], a[i][2], a[i][3], a[i][4], a[i][5], a[i][6]])
     print(tb, file=f_out)
-
-
