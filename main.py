@@ -15,10 +15,11 @@ with open('urls.txt') as urls:
         url = i
         f = urllib.request.urlopen(url)
         s = f.read()
-        text = str(s).replace(' ','')
+        text = str(s)
         part_name = text.find("nfl-c-player-header__title")
         name = text[text.find('>', part_name) + 1:text.find('</h1', part_name)]
         b.append(name)
+        text = text.replace(' ','')
         text_find1 = text.find('passingCompletions"scope="col">')
         text_find2 = text.find('/th', text_find1)
         comp = text[text_find1:text_find2:1]
